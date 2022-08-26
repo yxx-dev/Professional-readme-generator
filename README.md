@@ -1,7 +1,9 @@
-# Professional RREADME Generator
+# Professional README Generator
 
 ## Description
 A README Generator is a command-line application that dynamically generates a professional README.md file from a user's command-line input using the Inquirer package.
+
+FUNCTIONS: 
 
 ## Table of Contents (Optional)
 NA
