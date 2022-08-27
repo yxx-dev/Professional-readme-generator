@@ -65,13 +65,6 @@ inquirer
             message: 'Enter email address:',
             name: 'email',
         },
-        /*
-        {
-            type: 'input',
-            message: 'Questions',
-            name: 'questions',
-        },
-        */
     ])
     .then(answers => {
         userAnswers=answers;
