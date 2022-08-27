@@ -80,14 +80,14 @@ function generateReadMe() {
     //create or clear README
     fs.writeFile(`./${readMeFileName}.md`, '', () => {
         //writte title, then the rest - callback hell could be improved
-        fs.writeFile(`./${readMeFileName}.md`, `# ${userAnswers.title}\n`, () => {
+        fs.writeFile(`./${readMeFileName}.md`, `# ${userAnswers.title} · ${licenseBadge}\n`, () => {
             fs.appendFile(`./${readMeFileName}.md`, `\n## Description\n${userAnswers.description}\n`, () => {
                 fs.appendFile(`./${readMeFileName}.md`, `\n## Table of Contents\n${tableOfContentHTML}`, () => {
                     fs.appendFile(`./${readMeFileName}.md`, `\n## Installation\n${userAnswers.installation}\n`, () => {
                         fs.appendFile(`./${readMeFileName}.md`, `\n## Usage\n${userAnswers.usage}\n`, () => {
                             fs.appendFile(`./${readMeFileName}.md`, `\n## How to contribute\n${userAnswers.contribution}\n`, () => {
                                 fs.appendFile(`./${readMeFileName}.md`, `\n## Tests\n${userAnswers.test}\n`, () => {
-                                    fs.appendFile(`./${readMeFileName}.md`, `\n## License\n${licenseBadge}\n`, () => {
+                                    fs.appendFile(`./${readMeFileName}.md`, `\n## License\nThis application is covered under ${userAnswers.license} license.\n`, () => {
                                         fs.appendFile(`./${readMeFileName}.md`, `\n## Questions\nGitHub: [${userAnswers.github}](https://github.com/${userAnswers.github})  \nKindly email your question(s) to: ${userAnswers.email}\n`, (err) => {
                                             err ? console.error(err) : console.log('data recorded');
                                         });

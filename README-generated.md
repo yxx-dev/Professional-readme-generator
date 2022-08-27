@@ -1,7 +1,7 @@
-# fdsfsdaf
+# The coolest project ever · [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Description
-dfas
+dfsdafsdhnkjdsaghdaskjghjadkf
 
 ## Table of Contents
 1. [Installation](#Installation)
@@ -12,20 +12,20 @@ dfas
 6. [Questions](#Questions)
 
 ## Installation
-fd
+fdsfa
 
 ## Usage
-
+fdsafsdafdasfasd
 
 ## How to contribute
-f
+fdsafdagagads
 
 ## Tests
-ff
+fdsafdas
 
 ## License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+This application is covered under Apache 2.0 license.
 
 ## Questions
 GitHub: [yxx-dev](https://github.com/yxx-dev)  
-Kindly email your question(s) to: dfa@gmai.cp
+Kindly email your question(s) to: dfdsasf@gmail.com

@@ -5,7 +5,7 @@ A command-line application that dynamically generates a professional README.md f
 
 Functions: 
 1. user enters project title, description, installation, usage, how to contribute, testing, license, GitHub username and email. 
-2. The application would:
+2. then, the application would:
     - Populate these information in a professional README format
     - Generate a table of content with links to each heading
     - Display a license badget with links to license details
@@ -15,7 +15,7 @@ Functions:
 NA
 
 ## Installation
-Node.js, Inquirer npm
+Node.js, npm(inquirer) 
 
 ## Usage
 For demonstration purpose only.
