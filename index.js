@@ -5,11 +5,16 @@ import fs from 'fs';
 let readMeFileName = 'README-generated';
 //an array of questions for user input
 const questions = ['What is the title of your project?', 'Enter project descriptions:', 'Enter installation instructions:', 'Enter usage info:', 'Enter contribution guidelines:', 'Enter test instructions:', 'License:', 'Enter GitHub username:', 'Enter email address:', 'Questions'];
-//const subtitles = ['## Table of Contents', '## Description', '## Installation', '## Usage', '## How to Contribute', '## Tests', '## License', '## GitHub', '## Email', '## Questions'];
+const tableOfContent = ['Installation', 'Usage', 'How to Contribute', 'Tests', 'License', 'GitHub', 'Email', 'Questions'];
+let tableOfContentHTML
 let userAnswers;
-// 'Enter Table of Contents:'?
 
+//generate table of content
+for (let i=0; i<tableOfContent.length; i++) {
+    tableOfContentHTML += `${i+1}. ${tableOfContent[i]} (#${tableOfContent[i]})\n`
+}
 
+//prompting for README entries
 inquirer
     .prompt([
         {
@@ -66,8 +71,9 @@ inquirer
     ])
     .then(answers => {
         userAnswers=answers;
-        
-    }).then(() => {init();});
+
+        generateReadMe();
+    });
     //.catch(err ? err => console.log(err) : console.log('recorded'));
 
 
@@ -83,22 +89,22 @@ function writeToFile(fileName, title) {
 }
 
 //function to append to README file
+/*
 function appendToFile(fileName, subtitle, data) {
      //append info to file
     fs.appendFile(`./${fileName}.md`, `\n${subtitle}\n${data}\n`, err => err ? console.error(err) : console.log('data recorded'));
 }
+*/
 
 
-
-
-
-//function to initialize app
-async function init() {
+//function to finalize README file
+function generateReadMe() {
+    //create or clear README
     fs.writeFile(`./${readMeFileName}.md`, '', () => {
-        //writte title
+        //writte title, then the rest - undesired callback hell
         fs.writeFile(`./${readMeFileName}.md`, `# ${userAnswers.title}\n`, () => {
             fs.appendFile(`./${readMeFileName}.md`, `\n## Description\n${userAnswers.description}\n`, () => {
-                fs.appendFile(`./${readMeFileName}.md`, `\n## Table of Contents\n${userAnswers.description}\n`, () => {
+                fs.appendFile(`./${readMeFileName}.md`, `\n## Table of Contents\n${tableOfContentHTML}`, () => {
                     fs.appendFile(`./${readMeFileName}.md`, `\n## Installation\n${userAnswers.installation}\n`, () => {
                         fs.appendFile(`./${readMeFileName}.md`, `\n## Usage\n${userAnswers.usage}\n`, () => {
                             fs.appendFile(`./${readMeFileName}.md`, `\n## How to contribute\n${userAnswers.contribution}\n`, () => {
@@ -165,7 +171,4 @@ async function init() {
     */
 }
 
-
-// Function call to initialize app
-//init();
 
