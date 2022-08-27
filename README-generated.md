@@ -1,7 +1,7 @@
-# fdfsdf
+# cool project
 
 ## Description
-f
+dljfldakjgfaejgopiwjuoitadg
 
 ## Table of Contents
 1. [Installation](#Installation)
@@ -9,30 +9,23 @@ f
 3. [How-to-Contribute](#How-to-Contribute)
 4. [Tests](#Tests)
 5. [License](#License)
-6. [GitHub](#GitHub)
-7. [Email](#Email)
-8. [Questions](#Questions)
+6. [Questions](#Questions)
 
 ## Installation
-d
+ffdsfsadfad
 
 ## Usage
-d
+dfdasfads
 
 ## How to contribute
-d
+fcdsaf
 
 ## Tests
-
+fdsa
 
 ## License
 MIT
 
-## GitHub
-d
-
-## Email
-d
-
 ## Questions
-d
+[Link to GitHub](https://github.com/yxx-dev)
+Email your question to: hermit@gmail.com
