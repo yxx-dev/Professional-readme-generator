@@ -74,9 +74,12 @@ inquirer
 //function to write README file
 function writeToFile(fileName, title) {
     //create or clear readMeFileName file
-    fs.writeFile(`./${fileName}.md`, '', err => err ? console.error(err) : console.log(`${fileName}.md file created`));
-    //writte title
-    fs.writeFile(`./${fileName}.md`, `# ${title}\n`, err => err ? console.error(err) : console.log('title recorded'));
+    fs.writeFile(`./${fileName}.md`, '', () => {
+        //writte title
+        //callback => callback ? console.error(err) : console.log('title recorded')
+        fs.writeFile(`./${fileName}.md`, `# ${title}\n`, err => err ? console.error(err) : console.log('title recorded'))
+    }
+    );
 }
 
 //function to append to README file
@@ -90,8 +93,37 @@ function appendToFile(fileName, subtitle, data) {
 
 
 //function to initialize app
-function init() {
+async function init() {
+    fs.writeFile(`./${readMeFileName}.md`, '', () => {
+        //writte title
+        fs.writeFile(`./${readMeFileName}.md`, `# ${userAnswers.title}\n`, () => {
+            fs.appendFile(`./${readMeFileName}.md`, `\n## Description\n${userAnswers.description}\n`, () => {
+                fs.appendFile(`./${readMeFileName}.md`, `\n## Table of Contents\n${userAnswers.description}\n`, () => {
+                    fs.appendFile(`./${readMeFileName}.md`, `\n## Installation\n${userAnswers.installation}\n`, () => {
+                        fs.appendFile(`./${readMeFileName}.md`, `\n## Usage\n${userAnswers.usage}\n`, () => {
+                            fs.appendFile(`./${readMeFileName}.md`, `\n## How to contribute\n${userAnswers.contribution}\n`, () => {
+                                fs.appendFile(`./${readMeFileName}.md`, `\n## Tests\n${userAnswers.test}\n`, () => {
+                                    fs.appendFile(`./${readMeFileName}.md`, `\n## License\n${userAnswers.license}\n`, () => {
+                                        fs.appendFile(`./${readMeFileName}.md`, `\n## GitHub\n${userAnswers.github}\n`, () => {
+                                            fs.appendFile(`./${readMeFileName}.md`, `\n## Email\n${userAnswers.email}\n`, () => {
+                                                fs.appendFile(`./${readMeFileName}.md`, `\n## Questions\n${userAnswers.questions}\n`, (err) => {
+                                                    err ? console.error(err) : console.log('data recorded');
+                                                });
+                                            });
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        })
+    });
+
+    /*
     writeToFile(readMeFileName, userAnswers.title);
+
     appendToFile(readMeFileName, '## Description', userAnswers.description);
 
     appendToFile(readMeFileName, '## Table of Contents','pending');
@@ -104,6 +136,7 @@ function init() {
     appendToFile(readMeFileName, '## GitHub', userAnswers.github);
     appendToFile(readMeFileName, '## Email', userAnswers.email);
     appendToFile(readMeFileName, '## Questions', userAnswers.questions);
+    
 
     //writeToFile(process.argv[2], process.argv[3]);
     /*
