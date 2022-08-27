@@ -1,7 +1,7 @@
-# The coolest project ever · [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# My cool project · [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 ## Description
-dfsdafsdhnkjdsaghdaskjghjadkf
+this is descriptionsdfdskjfdklsfjsd;ljksd
 
 ## Table of Contents
 1. [Installation](#Installation)
@@ -12,20 +12,20 @@ dfsdafsdhnkjdsaghdaskjghjadkf
 6. [Questions](#Questions)
 
 ## Installation
-fdsfa
+fjlkdsjfladkfsld;jf
 
 ## Usage
-fdsafsdafdasfasd
+fjsdlkafjad;
 
 ## How to contribute
-fdsafdagagads
+fjdsklfa;df
 
 ## Tests
-fdsafdas
+fjdlksafjld;fsldjfa
 
 ## License
-This application is covered under Apache 2.0 license.
+This application is covered under BSD license.
 
 ## Questions
 GitHub: [yxx-dev](https://github.com/yxx-dev)  
-Kindly email your question(s) to: dfdsasf@gmail.com
+Kindly email your question(s) to: fdskafjadk;f@gmail.com
