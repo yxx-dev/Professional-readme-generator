@@ -1,7 +1,7 @@
-# ttt project
+# fdsfsdaf
 
 ## Description
-fds
+dfas
 
 ## Table of Contents
 1. [Installation](#Installation)
@@ -12,21 +12,20 @@ fds
 6. [Questions](#Questions)
 
 ## Installation
-fds
+fd
 
 ## Usage
-d
+
 
 ## How to contribute
-d
+f
 
 ## Tests
-dd
+ff
 
 ## License
-Apache 2.0 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Questions
-GitHub username: yxx-dev  
-[Link to GitHub](https://github.com/yxx-dev)  
-Email your question to: fdfad@gmail.com
+GitHub: [yxx-dev](https://github.com/yxx-dev)  
+Kindly email your question(s) to: dfa@gmai.cp

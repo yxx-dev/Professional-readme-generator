@@ -94,8 +94,8 @@ function generateReadMe() {
                         fs.appendFile(`./${readMeFileName}.md`, `\n## Usage\n${userAnswers.usage}\n`, () => {
                             fs.appendFile(`./${readMeFileName}.md`, `\n## How to contribute\n${userAnswers.contribution}\n`, () => {
                                 fs.appendFile(`./${readMeFileName}.md`, `\n## Tests\n${userAnswers.test}\n`, () => {
-                                    fs.appendFile(`./${readMeFileName}.md`, `\n## License\n${userAnswers.license} ${licenseBadge}\n`, () => {
-                                        fs.appendFile(`./${readMeFileName}.md`, `\n## Questions\nGitHub username: ${userAnswers.github}  \n[Link to GitHub](https://github.com/${userAnswers.github})  \nEmail your question to: ${userAnswers.email}\n`, (err) => {
+                                    fs.appendFile(`./${readMeFileName}.md`, `\n## License\n${licenseBadge}\n`, () => {
+                                        fs.appendFile(`./${readMeFileName}.md`, `\n## Questions\nGitHub: [${userAnswers.github}](https://github.com/${userAnswers.github})  \nKindly email your question(s) to: ${userAnswers.email}\n`, (err) => {
                                             err ? console.error(err) : console.log('data recorded');
                                         });
                                     });
