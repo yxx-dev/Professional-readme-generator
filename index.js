@@ -11,7 +11,7 @@ let userAnswers;
 
 //generate table of content
 for (let i=0; i<tableOfContent.length; i++) {
-    tableOfContentHTML += `${i+1}. [${tableOfContent[i]}] (#${tableOfContent[i]})\n`
+    tableOfContentHTML += `${i+1}. [${tableOfContent[i]}](#${tableOfContent[i]})\n`
 }
 
 //prompting for README entries
