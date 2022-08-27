@@ -6,12 +6,12 @@ let readMeFileName = 'README-generated';
 //an array of questions for user input
 const questions = ['What is the title of your project?', 'Enter project descriptions:', 'Enter installation instructions:', 'Enter usage info:', 'Enter contribution guidelines:', 'Enter test instructions:', 'License:', 'Enter GitHub username:', 'Enter email address:', 'Questions'];
 const tableOfContent = ['Installation', 'Usage', 'How to Contribute', 'Tests', 'License', 'GitHub', 'Email', 'Questions'];
-let tableOfContentHTML
+let tableOfContentHTML = '';
 let userAnswers;
 
 //generate table of content
 for (let i=0; i<tableOfContent.length; i++) {
-    tableOfContentHTML += `${i+1}. ${tableOfContent[i]} (#${tableOfContent[i]})\n`
+    tableOfContentHTML += `${i+1}. ${tableOfContent[i]} [link](#${tableOfContent[i]})\n`
 }
 
 //prompting for README entries
