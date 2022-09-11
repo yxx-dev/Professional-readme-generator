@@ -2,6 +2,7 @@
 
 ## Description
 A command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
+Walk-through video: https://drive.google.com/file/d/1viUmmZ2OOlm70WkijBH2itHJON0LdCpa/view
 
 Functions: 
 1. user enters project title, description, installation, usage, how to contribute, testing, license, GitHub username and email. 
